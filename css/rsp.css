@@ -1,5 +1,5 @@
 @media all and (max-width: 768px) {
-  #maincontent #map-container {
+  #maincontent #map-container.restaurant {
     position: fixed;
     bottom: 0;
     left: 0;
