@@ -16,6 +16,7 @@ self.addEventListener('install', e => {
         '/restaurant.html?id=9',
         '/restaurant.html?id=10',
         '/css/styles.css',
+        '/css/rsp.css',
         '/img/1.jpg',
         '/img/2.jpg',
         '/img/3.jpg',
