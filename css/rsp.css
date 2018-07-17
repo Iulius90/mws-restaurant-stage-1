@@ -44,5 +44,57 @@
    }
 }
 
+
+@media all and (max-width: 600px) {
+  .filter-options {
+    height: auto;
+  }
+
+  .leaflet-control-attribution.leaflet-control {
+    font-size: 8px;
+  }
+
+  nav {
+    height: 30px;
+  }
+
+  nav h1 {
+    font-size: 10px;
+    line-height: 30px;
+  }
+
+  nav h1 a {
+    font-size: 10pt;
+    letter-spacing: 2px;
+  }
+
+  #map {
+    height: 45vh;
+  }
+
+  .filter-options {
+    height: 50px;
+  }
+
+  .filter-options select {
+    height: 30px;
+  }
+
+  .filter-options h2 {
+    display: block;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .filter-options select {
+    margin: 0;
+    width: 50%;
+    border: 1px solid #fff;
+    float: left;
+    border: 4px solid #3397DB;
+  }
+}
+
+
 /*@media all and (max-width: 991px) { ... }*/
 /*@media all and (max-width: 480px) { ... }*/
