@@ -45,6 +45,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 #maincontent {
   min-height: 100%;
+  overflow: auto;
 }
 
 #footer {
@@ -235,7 +236,7 @@ nav h1 a {
   border-radius: 4px;
 }
 
-#restaurants-list li a:hover { 
+#restaurants-list li a:hover {
   background-color: #f67268;
 }
 
@@ -348,6 +349,6 @@ nav h1 a {
 }
 
 /*move zoom in / zoom out buttons to the middle of the page (verticaly)*/
-.leaflet-top {
+.leaflet-top.leaflet-left {
   top: calc(50% - 43px);
 }
