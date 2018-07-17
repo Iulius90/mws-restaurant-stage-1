@@ -19,7 +19,8 @@
     padding: 30px 40px 30px;
   }
 
-  #restaurant-container, #reviews-container  {
+  #restaurant-container,
+  #reviews-container  {
     width: 50%;
     display: inline-block;
     margin-top: calc(45vw + 40px);
