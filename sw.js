@@ -45,4 +45,3 @@ self.addEventListener('fetch', event => {
       //   '/js/dbhelper.js',
       //   '/js/main.js',
       //   '/js/restaurant_info.js'
-      //   '/js/swRegister.js',
