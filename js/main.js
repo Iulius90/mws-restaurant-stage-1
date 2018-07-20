@@ -152,11 +152,7 @@ createRestaurantHTML = (restaurant) => {
 
   const image = document.createElement("img");
   image.className = "restaurant-img";
-
   image.src = restaurant.photograph ? DBHelper.imageUrlForRestaurant(restaurant) : 'img/image_not_found.png'; // - handle missing images in json response
-
-  console.log(DBHelper.imageUrlForRestaurant(restaurant))
-
   image.alt = restaurant.name;
   li.append(image);
 
