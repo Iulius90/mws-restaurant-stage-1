@@ -27,7 +27,8 @@ self.addEventListener('install', e => {
         '/img/8.jpg',
         '/img/9.jpg',
         '/img/10.jpg',
-        '/img/favicon.ico']);
+        '/img/favicon.ico',
+        '/img/image_not_found.png']);
     })
   );
 });
@@ -39,6 +40,7 @@ self.addEventListener('fetch', event => {
     })
   );
 });
+
 
       // '/js/dbhelper.js',
       //   '/js/main.js',
