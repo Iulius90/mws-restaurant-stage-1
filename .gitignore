@@ -1,0 +1,13 @@
+# ignore these:
+/node_modules
+
+# Desktop files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# NPM
+node_modules
+npm-debug.log
+

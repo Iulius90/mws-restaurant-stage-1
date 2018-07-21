@@ -1,0 +1,22 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "stage 1 of MWS nanodegree",
+  "main": "js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iulius90/mws-restaurant-stage-1.git"
+  },
+  "author": "Iulian Savin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Iulius90/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/Iulius90/mws-restaurant-stage-1#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
+}
