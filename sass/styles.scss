@@ -67,53 +67,49 @@ nav {
   height: 40px;
   background-color: #252831;
   text-align:center;
-}
 
-nav h1 {
-  margin: 0 auto;
-  font-size: 20px;
-  line-height: 40px;
-}
+  h1 {
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 40px;
 
-nav h1 a {
-  color: #fff;
-  font-size: 14pt;
-  font-weight: 200;
-  letter-spacing: 10px;
-  text-transform: uppercase;
+    a {
+      color: #fff;
+      font-size: 14pt;
+      font-weight: 200;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+    }
+  }
 }
 
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: 50%;
-}
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 17px;
+  margin: 0;
+  width: 50%;
 
-/* Display list items side by side */
-#breadcrumb li {
+  li {
     display: inline;
-}
 
-/* Add a slash symbol (/) before/behind each list item */
-#breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
-}
+    &+li:before {
+      padding: 8px;
+      color: black;
+      content: "/\00a0";
+    }
 
-/* Add a color to all links inside the list */
-#breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
-}
+    a {
+      color: #0275d8;
+      text-decoration: none;
 
-/* Add a color on mouse-over */
-#breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+      &:hover {
+        color: #01447e;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 /* ====================== Map ====================== */
@@ -131,27 +127,27 @@ nav h1 a {
   height: 50px;
   background-color: #3397DB;
   align-items: center;
-}
 
-.filter-options h2 {
-  color: white;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1;
-  margin: 0 20px;
-  display: inline-block;
-}
+  h2 {
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 20px;
+    display: inline-block;
+  }
 
-.filter-options select {
-  background-color: white;
-  border: 1px solid #fff;
-  font-family: Arial,sans-serif;
-  font-size: 11pt;
-  height: 36px;
-  letter-spacing: 0;
-  margin: 7px;
-  padding: 0 10px;
-  width: 200px;
+  select {
+    background-color: white;
+    border: 1px solid #fff;
+    font-family: Arial,sans-serif;
+    font-size: 11pt;
+    height: 36px;
+    letter-spacing: 0;
+    margin: 7px;
+    padding: 0 10px;
+    width: 200px;
+  }
 }
 
 /* ====================== Restaurant Listing ====================== */
