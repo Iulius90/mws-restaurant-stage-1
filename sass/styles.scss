@@ -50,12 +50,15 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #DBDBDB;
   font-size: 8pt;
   letter-spacing: 1px;
   padding: 25px;
   text-align: center;
   text-transform: uppercase;
+  a strong {
+    color: #FFD5A8;
+  }
 }
 
 * {box-sizing: border-box;}
@@ -125,7 +128,7 @@ nav {
 .filter-options {
   width: 100%;
   height: 50px;
-  background-color: #3397DB;
+  background-color: #B1120C;
   align-items: center;
 
   h2 {
@@ -147,6 +150,10 @@ nav {
     margin: 7px;
     padding: 0 10px;
     width: 200px;
+  }
+
+  label {
+    display: none;
   }
 }
 
@@ -203,7 +210,7 @@ nav {
 }
 
 #restaurants-list li h1 {
-  color: #F44336;
+  color: #B1120C;
   font-family: Arial,sans-serif;
   font-size: 14pt;
   font-weight: 200;
@@ -219,7 +226,7 @@ nav {
 }
 
 #restaurants-list li a {
-  background-color: #F44336;
+  background-color: #B1120C;
   color: #fff;
   display: inline-block;
   font-size: 10pt;
@@ -347,4 +354,12 @@ nav {
 /*move zoom in / zoom out buttons to the middle of the page (verticaly)*/
 .leaflet-top.leaflet-left {
   top: calc(50% - 43px);
+}
+
+.leaflet-control-attribution.leaflet-control {
+  background-color: #fff;
+
+  a {
+    color: #B1120C;
+  }
 }

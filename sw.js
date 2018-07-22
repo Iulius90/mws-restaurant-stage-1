@@ -28,7 +28,10 @@ self.addEventListener('install', e => {
         '/img/9.jpg',
         '/img/10.jpg',
         '/img/favicon.ico',
-        '/img/image_not_found.png']);
+        '/img/image_not_found.png',
+        '/js/dbhelper.js',
+        '/js/main.js',
+        '/js/restaurant_info.js']);
     })
   );
 });
