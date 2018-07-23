@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
+const webp = require('gulp-webp');
 
 
 gulp.task('style', () => {
@@ -28,8 +29,13 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('jpg-to-webp', function () {
+  gulp.src('img-raw/**/*.jpg')
+    .pipe(webp())
+    .pipe(gulp.dest('./img/'))
+})
 
-gulp.task('default', gulp.series(gulp.parallel(['style','compress-js','browser-sync']), function(){
+gulp.task('default', gulp.series(gulp.parallel(['style','compress-js','browser-sync','jpg-to-webp']), function(){
   gulp.watch('sass/**/*.scss', ['style']);
   gulp.watch('unminified-js/**/*.js', ['compress-js']);
 }))

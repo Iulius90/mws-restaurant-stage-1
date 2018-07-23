@@ -15,6 +15,7 @@ self.addEventListener('install', e => {
         '/restaurant.html?id=8',
         '/restaurant.html?id=9',
         '/restaurant.html?id=10',
+        '/css/leaflet-minified.css',
         '/css/styles.css',
         '/css/rsp.css',
         '/img/1.jpg',
@@ -28,10 +29,16 @@ self.addEventListener('install', e => {
         '/img/9.jpg',
         '/img/10.jpg',
         '/img/favicon.ico',
-        '/img/image_not_found.png',
-        '/js/dbhelper.js',
-        '/js/main.js',
-        '/js/restaurant_info.js']);
+        // '/img/image_not_found.png',
+        // '/css/images/layers-2x.png',
+        // '/css/images/layers.png',
+        // '/css/images/marker-icon-2x.png',
+        // '/css/images/marker-icon.png',
+        // '/css/images/marker-shadow.png',
+        // '/js/dbhelper.js',
+        // '/js/main.js',
+        // '/js/restaurant_info.js'
+        ]);
     })
   );
 });
@@ -48,3 +55,4 @@ self.addEventListener('fetch', event => {
       //   '/js/dbhelper.js',
       //   '/js/main.js',
       //   '/js/restaurant_info.js'
+
