@@ -169,23 +169,23 @@ nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
 
-#restaurants-list li {
-  background-color: #fff;
-  font-family: Arial,sans-serif;
-  min-height: 380px;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.16), 0 2px 1px -1px rgba(0,0,0,.16);
+  li {
+    background-color: #fff;
+    font-family: Arial,sans-serif;
+    min-height: 380px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.16), 0 2px 1px -1px rgba(0,0,0,.16);
 
-  border-radius: 5px;
-  /*justify-content: center;*/
-  min-height: 260px;
-  align-content: space-between;
-  margin: 5px;
-  min-width: 260px;
-  overflow: hidden;
-  height: 100%;
-  padding: 0 1em 1em 1em;
+    border-radius: 5px;
+    /*justify-content: center;*/
+    min-height: 260px;
+    align-content: space-between;
+    margin: 5px;
+    min-width: 260px;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 1em 1em 1em;
+  }
 }
 
 @supports (display: grid) {
