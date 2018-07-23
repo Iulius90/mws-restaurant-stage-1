@@ -35,7 +35,7 @@ gulp.task('jpg-to-webp', function () {
     .pipe(gulp.dest('./img/'))
 })
 
-gulp.task('default', gulp.series(gulp.parallel(['style','compress-js','browser-sync','jpg-to-webp']), function(){
+gulp.task('default', gulp.series(gulp.parallel(['style','compress-js','jpg-to-webp']), function(){
   gulp.watch('sass/**/*.scss', ['style']);
   gulp.watch('unminified-js/**/*.js', ['compress-js']);
 }))
