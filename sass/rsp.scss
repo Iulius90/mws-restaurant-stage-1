@@ -67,19 +67,17 @@
     font-size: 8px;
   }
 
-  nav {
+  header nav {
     height: 30px;
-  }
+    h1 {
+      font-size: 10px;
+      line-height: 30px;
 
-  nav h1 {
-    font-size: 10px;
-    line-height: 30px;
-  }
-
-  nav h1 a {
-    font-size: 10pt;
-    letter-spacing: 2px;
-  }
+      a {
+        font-size: 10pt;
+        letter-spacing: 2px;
+      }
+    }
 
   #map {
     height: 45vh;
