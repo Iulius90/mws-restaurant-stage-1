@@ -38,10 +38,7 @@ self.addEventListener('install', e => {
         '/marker-icon-2x.png',
         '/marker-icon.png',
         '/marker-shadow.png',
-        '/js/dbhelper.js',
-        '/js/idb.js',
-        '/js/main.js',
-        '/js/restaurant_info.js'
+        '/js/all.js',
         ]);
     })
   );
