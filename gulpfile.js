@@ -38,15 +38,25 @@ gulp.task('jpg-to-webp', function () {
 
 // concat + minify all js
 gulp.task('scripts',  () => {
-   // gulp.src('js/**/*.js')
-   gulp.src(['unminified-js/dbhelper.js','unminified-js/restaurant_info.js','unminified-js/main.js','unminified-js/idb.js'])
+  // gulp.src('js/**/*.js')
+  gulp.src(['unminified-js/dbhelper.js','unminified-js/restaurant_info.js','unminified-js/main.js','unminified-js/idb.js'])
     .pipe(concat('all.js'))
     .pipe(babel({
       presets: ['env']
     }))
     .pipe(uglify())
     .pipe(gulp.dest('./js/'));
+
+  gulp.src(['unminified-js/dbhelper.js','unminified-js/restaurant_info.js','unminified-js/main.js','unminified-js/idb.js'])
+    .pipe(babel({
+      presets: ['env']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js/'));
 });
+
+
+
 
 
 gulp.task('default', gulp.series(gulp.parallel(['style','jpg-to-webp','scripts']), function(){

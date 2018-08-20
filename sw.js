@@ -38,7 +38,7 @@ self.addEventListener('install', e => {
         '/marker-icon-2x.png',
         '/marker-icon.png',
         '/marker-shadow.png',
-        '/js/all.js',
+        // '/js/all.js'
         ]);
     })
   );
