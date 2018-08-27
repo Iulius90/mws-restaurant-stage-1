@@ -53,11 +53,16 @@ gulp.task('scripts',  () => {
     }))
     .pipe(uglify())
     .pipe(gulp.dest('./js/'));
+
+  //js file for restaurant.html  
+  gulp.src(['unminified-js/dbhelper.js','unminified-js/restaurant_info.js'])
+    .pipe(concat('restaurant.js'))
+    .pipe(babel({
+      presets: ['env']
+    }))
+    .pipe(uglify())
+    .pipe(gulp.dest('./js/'));
 });
-
-
-
-
 
 gulp.task('default', gulp.series(gulp.parallel(['style','jpg-to-webp','scripts']), function(){
   gulp.watch('sass/**/*.scss', ['style']);

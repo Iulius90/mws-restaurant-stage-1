@@ -22,13 +22,42 @@
     /*styles.css*/
     nav{width:100%;height:40px;background-color:#252831;text-align:center}nav h1{margin:0 auto;font-size:20px;line-height:40px}nav h1 a{color:#fff;font-size:14pt;font-weight:200;letter-spacing:10px;text-transform:uppercase}#map{height:400px;width:100%;background-color:#ccc}.filter-options{width:100%;height:50px;background-color:#B1120C;align-items:center}.filter-options h2{color:#fff;font-size:1rem;font-weight:400;line-height:1;margin:0 20px;display:inline-block}.filter-options select{background-color:#fff;border:1px solid #fff;font-family:Arial,sans-serif;font-size:11pt;height:36px;letter-spacing:0;margin:7px;padding:0 10px;width:200px}.filter-options label{color:#fff}body,td,th,p{font-family:Arial, Helvetica, sans-serif;font-size:10pt;color:#333;line-height:1.5}body{background-color:#fcfcfc;margin:0;position:relative}ul,li{font-family:Arial, Helvetica, sans-serif;font-size:10pt;color:#333}a{color:orange;text-decoration:none}a:hover,a:focus{color:#3397db;text-decoration:none}a img{border:none 0px #fff}h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif;margin:0 0 20px}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}#maincontent{min-height:100%;overflow:auto}#footer{background-color:#444;color:#DBDBDB;font-size:8pt;letter-spacing:1px;padding:25px;text-align:center;text-transform:uppercase}#footer a strong{color:#FFD5A8}*{box-sizing:border-box}#breadcrumb{padding:10px 40px 16px;list-style:none;background-color:#eee;font-size:17px;margin:0;width:50%}#breadcrumb li{display:inline}#breadcrumb li+li:before{padding:8px;color:black;content:"/\00a0"}#breadcrumb li a{color:#0275d8;text-decoration:none}#breadcrumb li a:hover{color:#01447e;text-decoration:underline}#restaurants-list{list-style:none;margin:0;max-width:1200px;padding:10px;box-sizing:border-box;margin:2em auto;justify-content:center;display:flex;align-items:center;flex-wrap:wrap}#restaurants-list li{background-color:#fff;font-family:Arial,sans-serif;min-height:380px;box-shadow:0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.16),0 2px 1px -1px rgba(0,0,0,0.16);border-radius:5px;min-height:260px;align-content:space-between;margin:5px;min-width:260px;overflow:hidden;height:100%;padding:0 1em 1em 1em}@supports (display: grid){#restaurants-list{display:grid;grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));grid-gap:20px}#restaurants-list li{display:grid;width:100%;margin:0 auto}}#restaurants-list .restaurant-img{background-color:#ccc;margin:0 0 0 -1em;width:calc(100% + 2em)}#restaurants-list li h1{color:#B1120C;font-family:Arial,sans-serif;font-size:14pt;font-weight:200;letter-spacing:0;line-height:1.3;margin:20px 0 10px}#restaurants-list p{margin:0;font-size:11pt;color:rgba(0,0,0,0.87)}#restaurants-list li a{background-color:#B1120C;color:#fff;display:inline-block;font-size:10pt;margin:15px auto 0;padding:8px 20px 10px;text-align:center;text-decoration:none;text-transform:uppercase;width:10em;border-radius:4px}#restaurants-list li a:hover{background-color:#f67268}.inside header{position:fixed;top:0;width:100%;z-index:1000}.inside #map-container{background:blue none repeat scroll 0 0;height:calc(100% - 40px);position:fixed;right:0;top:40px;width:50%}.inside #footer{bottom:0;position:absolute;width:50%}#restaurant-name{color:#f18200;font-family:Arial,sans-serif;font-size:20pt;font-weight:200;letter-spacing:0;margin:15px 0 30px;text-transform:uppercase;line-height:1.1}#restaurant-img{width:100%}#restaurant-address{font-size:12pt;margin:10px 0px}#restaurant-cuisine{background-color:#333;color:#ddd;font-size:12pt;font-weight:300;letter-spacing:10px;margin:0 0 20px;padding:2px 0;text-align:center;text-transform:uppercase;width:100%}#restaurant-container,#reviews-container{border-bottom:1px solid #d9d9d9;border-top:1px solid #fff;padding:140px 40px 30px;width:50%}#reviews-container{padding:30px 40px 80px}#reviews-container h2{color:#f58500;font-size:24pt;font-weight:300;letter-spacing:-1px;padding-bottom:1pt}#reviews-list{margin:0;padding:0}#reviews-list li{background-color:#fff;display:block;list-style-type:none;margin:0 0 30px;overflow:hidden;padding:20px;position:relative;width:100%;box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12)}#reviews-list li p{margin:0 0 10px}#restaurant-hours td{color:#666}.leaflet-top.leaflet-left{top:calc(50% - 43px)}.leaflet-control-attribution.leaflet-control{background-color:#fff}.leaflet-control-attribution.leaflet-control a{color:#B1120C}
 
+      .restaurant-header h2 {
+        display: inline-block;
+        float: left;
+        width: calc(100% - 30px);
+      }
+
+      .restaurant-header button {
+        display: inline-block;
+        float: left;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 1;
+        padding: 0;
+        margin: 15px 0 0;
+        background: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .restaurant-header button.is-favorite {
+        color: #f39c12;
+      }
+
+      /*to do - minify css*/
+
       /*responsive css*/
-      @media all and (max-width: 768px){#maincontent #map-container.restaurant{position:fixed;bottom:0;left:0;width:100%;height:45vw;z-index:10;box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12)}#breadcrumb{padding:5px 40px 5px;width:100%;line-height:17px}#restaurant-container{padding:30px 40px 30px}#reviews-container{margin-bottom:64px}#restaurant-container,#reviews-container{width:50%;display:inline-block;margin-top:calc(45vw + 40px);border-bottom:none}#restaurant-name,#reviews-container h2{margin:0 0 30px;font-size:24px;line-height:1.1}#restaurant-container{float:left;padding:25px 15px 25px 30px}#reviews-container{float:right;padding:25px 30px 25px 15px}.inside #footer{width:100%}.filter-options label{display:none}}@media all and (max-width: 600px){.filter-options{height:auto}.leaflet-control-container .leaflet-control-attribution.leaflet-control{font-size:8px}nav{height:30px}nav h1{font-size:10px;line-height:30px}nav h1 a{font-size:10pt;letter-spacing:2px}#map{height:45vh}.filter-options{height:50px}.filter-options select{height:30px}.filter-options h2{display:block;padding:5px;text-align:center}.filter-options select{margin:0;width:50%;border:1px solid #fff;float:left;border:4px solid #B1120C}#restaurant-container,#reviews-container{width:100%;padding:15px}#reviews-container{margin-top:0}#restaurant-hours td{font-size:12px}#restaurant-name,#reviews-container h2{margin:0 0 15px;font-size:20px}#footer{padding:15px;font-size:7pt}}
+      @media all and (max-width: 768px){#maincontent #map-container.restaurant{position:fixed;bottom:0;left:0;width:100%;height:45vw;z-index:10;box-shadow:0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12)}#breadcrumb{padding:5px 40px 5px;width:100%;line-height:17px}#restaurant-container{padding:30px 40px 30px}#reviews-container{margin-bottom:64px}#restaurant-container,#reviews-container{width:50%;display:inline-block;margin-top:calc(45vw + 40px);border-bottom:none}#restaurant-name,#reviews-container h2{margin:0 0 30px;font-size:24px;line-height:1.1}#restaurant-container{float:left;padding:25px 15px 25px 30px}#reviews-container{float:right;padding:25px 30px 25px 15px}.inside #footer{width:100%}.filter-options label{display:none}.restaurant-header button{margin: 0;}}@media all and (max-width: 600px){.filter-options{height:auto}.leaflet-control-container .leaflet-control-attribution.leaflet-control{font-size:8px}nav{height:30px}nav h1{font-size:10px;line-height:30px}nav h1 a{font-size:10pt;letter-spacing:2px}#map{height:45vh}.filter-options{height:50px}.filter-options select{height:30px}.filter-options h2{display:block;padding:5px;text-align:center}.filter-options select{margin:0;width:50%;border:1px solid #fff;float:left;border:4px solid #B1120C}#restaurant-container,#reviews-container{width:100%;padding:15px}#reviews-container{margin-top:0}#restaurant-hours td{font-size:12px}#restaurant-name,#reviews-container h2{margin:0 0 15px;font-size:20px}#footer{padding:15px;font-size:7pt}}
 
       /*leaflet css - only the parts that are actually used*/
       .leaflet-layer,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-pane,.leaflet-tile,.leaflet-tile-container{position:absolute;left:0;top:0}.leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;background:#ddd;outline:0;font:12px/1.5 "Helvetica Neue",Arial,Helvetica,sans-serif}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile{-webkit-user-select:none;-moz-user-select:none;user-select:none;-webkit-user-drag:none}.leaflet-marker-icon,.leaflet-marker-shadow{display:block}.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-shadow-pane img,.leaflet-container .leaflet-tile-pane img{max-width:none!important;max-height:none!important}.leaflet-container.leaflet-touch-zoom{-ms-touch-action:pan-x pan-y;touch-action:pan-x pan-y}.leaflet-container.leaflet-touch-drag{-ms-touch-action:pinch-zoom;touch-action:none;touch-action:pinch-zoom}.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{-ms-touch-action:none;touch-action:none}.leaflet-container a{-webkit-tap-highlight-color:rgba(51,181,229,.4);color:#0078A8}.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}.leaflet-control{position:relative;z-index:800;pointer-events:visiblePainted;pointer-events:auto;float:left;clear:both}.leaflet-bottom,.leaflet-top{position:absolute;z-index:1000;pointer-events:none}.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}.leaflet-right .leaflet-control{float:right;margin-right:10px}.leaflet-top .leaflet-control{margin-top:10px}.leaflet-bottom .leaflet-control{margin-bottom:10px}.leaflet-left .leaflet-control{margin-left:10px}.leaflet-fade-anim .leaflet-tile{will-change:opacity}.leaflet-zoom-animated{-webkit-transform-origin:0 0;-ms-transform-origin:0 0;transform-origin:0 0}.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:-webkit-grab;cursor:-moz-grab}.leaflet-control,.leaflet-popup-pane{cursor:auto}.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container{pointer-events:none}.leaflet-marker-icon.leaflet-interactive{pointer-events:visiblePainted;pointer-events:auto}.leaflet-bar{box-shadow:0 1px 5px rgba(0,0,0,.65);border-radius:4px}.leaflet-bar a,.leaflet-bar a:hover{background-color:#fff;border-bottom:1px solid #ccc;width:26px;height:26px;line-height:26px;display:block;text-align:center;text-decoration:none;color:#000}.leaflet-bar a{background-position:50% 50%;background-repeat:no-repeat;display:block}.leaflet-bar a:hover{background-color:#f4f4f4}.leaflet-bar a:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.leaflet-bar a:last-child{border-bottom-left-radius:4px;border-bottom-right-radius:4px;border-bottom:none}.leaflet-touch .leaflet-bar a{width:30px;height:30px;line-height:30px}.leaflet-touch .leaflet-bar a:first-child{border-top-left-radius:2px;border-top-right-radius:2px}.leaflet-touch .leaflet-bar a:last-child{border-bottom-left-radius:2px;border-bottom-right-radius:2px}.leaflet-control-zoom-in,.leaflet-control-zoom-out{font:700 18px 'Lucida Console',Monaco,monospace;text-indent:1px}.leaflet-touch .leaflet-control-zoom-in,.leaflet-touch .leaflet-control-zoom-out{font-size:22px}.leaflet-container .leaflet-control-attribution{background:#fff;background:rgba(255,255,255,.7);margin:0}.leaflet-control-attribution{padding:0 5px;color:#333}.leaflet-control-attribution a{text-decoration:none}.leaflet-control-attribution a:hover{text-decoration:underline}.leaflet-container .leaflet-control-attribution{font-size:11px}.leaflet-touch .leaflet-bar,.leaflet-touch .leaflet-control-attribution{box-shadow:none}.leaflet-touch .leaflet-bar{border:2px solid rgba(0,0,0,.2);background-clip:padding-box}
 
       .inside #map { background-color: #ccc; height: 100%; width: 100%;}
+
+
   </style>
 
   <!-- Beginning header -->
@@ -55,7 +84,12 @@
     <!-- End map -->
     <!-- Beginning restaurant -->
     <section id="restaurant-container">
-      <h2 id="restaurant-name" tabindex="0"></h2>
+      <div class="restaurant-header" tabindex="0">
+        <h2 id="restaurant-name"></h2>
+        <button title="Add to favorites">★</button>
+      </div>
+
+
       <img id="restaurant-img">
       <p id="restaurant-cuisine"></p>
       <address id="restaurant-address" tabindex="0"></address>
@@ -82,13 +116,13 @@
 
   <!-- Beginning scripts -->
   <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
-  <!-- Database helpers -->
-  <script type="text/javascript" src="js/dbhelper.js"></script>
-  <!-- Main javascript file -->
-  <script type="text/javascript" src="js/restaurant_info.js"></script>
-  <!-- <script type="application/javascript" src="js/idb.js"></script> -->
 
-  <!-- <script type="application/javascript" src="js/all.js"></script> -->
+  <!-- Database helpers -->
+  <!-- <script type="text/javascript" src="js/dbhelper.js"></script> -->
+  <!-- Main javascript file -->
+  <!-- <script type="text/javascript" src="js/restaurant_info.js"></script> -->
+
+  <script type="text/javascript" src="js/restaurant.js"></script>
 
   <script>
     if ('serviceWorker' in navigator) {
